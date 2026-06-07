@@ -1,5 +1,6 @@
 import { ShoppingBag, Menu } from 'lucide-react';
 import { motion } from 'motion/react';
+import crumieLogo from '../assets/crumie-logo-wordmark.png';
 
 interface HeaderProps {
   cartCount: number;
@@ -15,7 +16,7 @@ export default function Header({ cartCount, onCartClick, onLogoClick }: HeaderPr
         className="flex items-center gap-2 cursor-pointer"
         onClick={onLogoClick}
       >
-        <h1 className="text-2xl font-bold text-bakery-brown tracking-tight">Crumie</h1>
+        <img src={crumieLogo} alt="Crumie cookies and cakes" className="h-11 w-auto" />
       </div>
       
       <div className="flex items-center gap-4">
